@@ -44,5 +44,23 @@ public class Electrodomestico {
 			this.consumoEnergetico = CONSUMO_ENERGETICO_DEFECTO;
 		}
 	}
+
+	public double getPrecioBase() {
+		return precioBase;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public char getConsumoEnergetico() {
+		return consumoEnergetico;
+	}
+
+	public double getPeso() {
+		return peso;
+	}
+	
+	
 	
 }

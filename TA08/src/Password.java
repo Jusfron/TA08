@@ -24,4 +24,14 @@ public class Password {
 		this.contrasena = contrasena;
 	}
 
+	public int getLongitud() {
+		return longitud;
+	}
+
+	public String getContrasena() {
+		return contrasena;
+	}
+	
+	
+
 }
