@@ -32,13 +32,13 @@ public class Electrodomestico {
 	public Electrodomestico(double precioBase,String color, char consumoEnergetico, double peso) {
 		this.precioBase = precioBase;
 		this.peso = peso;
-		List<String> coloresList = new ArrayList<String>(Arrays.asList(COLORES_DISPONIBLES));
-		if(coloresList.contains(color)) {
+		List<String> coloresList = new ArrayList<String>(Arrays.asList(COLORES_DISPONIBLES));	//pasar COLORES_DISPONIBLES a List para usar .contains()
+		if(coloresList.contains(color)) {	//Comprobar que color sea correcto
 			this.color = color;
 		} else {
 			this.color = COLOR_DEFECTO;
 		}
-		if(consumoEnergetico >= 'A' && consumoEnergetico <= 'F') {
+		if(consumoEnergetico >= 'A' && consumoEnergetico <= 'F') {	//Comprobar valor de consumoEnergetico
 			this.consumoEnergetico = consumoEnergetico;
 		} else {
 			this.consumoEnergetico = CONSUMO_ENERGETICO_DEFECTO;
