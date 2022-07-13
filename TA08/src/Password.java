@@ -19,7 +19,7 @@ public class Password {
 		String contrasena = "";
 		for(int i = 0; i < longitud; i++) {
 			rand = (char) (33+Math.random()*94);	//crear caracteres ASCII de 33 a 126 para evitar caracteres como [BACKSPACE]
-			contrasena = contrasena + Character.toString(rand);
+			contrasena = contrasena + rand;
 		}
 		this.contrasena = contrasena;
 	}
